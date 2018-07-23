@@ -1,0 +1,94 @@
+body {
+	background-image: url("./images/bright_squares.png");
+}
+
+
+.chunk {
+	margin: 10px;
+	background-color: white;
+}
+
+
+#paraHeader {
+    height: 50vh;
+}
+
+#portrait {
+    position: center bottom;
+}
+
+img .para-code {
+	width: 100%;
+	height: auto;
+}
+
+h3 {
+	color: #05273D;
+    font-family: 'Rock Salt', serif;
+}
+
+p {
+	font-size: 1.5em;
+}
+
+nav {
+	background-color: #05273D;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-bottom: 5vh;
+}
+
+nav .brand-logo {
+    font-family: 'Rock Salt', serif;
+    font-size: 3em;
+    text-shadow: 3px 3px 6px #71c0f4;
+
+}
+
+.spacer {
+	height: 100px;
+}
+
+.slant-left {
+	border-top: 5px inset transparent;
+	border-bottom: 5px inset transparent;
+    transform: skewY(5deg); 
+    -ms-transform: skewY(5deg); /* IE 9 */
+    -webkit-transform: skewY(5deg); /* Safari and Chrome */
+    height: 200px;
+    top: -60px;
+    position: relative;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    z-index: -1;
+}
+
+.inner-slant-left {
+    transform: skewY(-5deg); 
+    -ms-transform: skewY(-5deg); /* IE 9 */
+    -webkit-transform: skewY(-5deg); /* Safari and Chrome */
+    position: absolute;
+    height: 100%;
+}
+
+.slant-right {
+	border-top: 5px inset transparent;
+	border-bottom: 5px inset transparent;
+    transform: skewY(-5deg); 
+    -ms-transform: skewY(-5deg); /* IE 9 */
+    -webkit-transform: skewY(-5deg); /* Safari and Chrome */
+    height: 200px;
+    top: -60px;
+    position: relative;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    z-index: -1;
+}
+
+.inner-slant-right {
+    transform: skewY(5deg); 
+    -ms-transform: skewY(5deg); /* IE 9 */
+    -webkit-transform: skewY(5deg); /* Safari and Chrome */
+    position: absolute;
+    height: 100%;
+}
