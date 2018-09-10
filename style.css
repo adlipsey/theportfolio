@@ -106,3 +106,11 @@ nav .brand-logo {
     position: absolute;
     height: 100%;
 }
+
+.page-footer {
+    background-color: #073c5e;
+}
+
+.page-footer .footer-copyright {
+    background-color: #05273D;
+}
