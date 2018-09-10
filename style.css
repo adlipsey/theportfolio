@@ -28,7 +28,7 @@ h3 {
 }
 
 p {
-	font-size: 1.5em;
+	font-size: 1.25em;
 }
 
 nav {
@@ -45,8 +45,22 @@ nav .brand-logo {
 
 }
 
+.btn-large {
+    margin: 10px;
+}
+
 .spacer {
 	height: 100px;
+}
+
+.icons {
+    width: 150px;
+    height: 150px;
+}
+
+.closing {
+    margin: 20px;
+    padding: 10px;
 }
 
 .slant-left {

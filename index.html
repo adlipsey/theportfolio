@@ -20,32 +20,34 @@
 	<nav>
     	<div class="nav-wrapper">
     		<a href="#!" class="brand-logo">Andrew Lipsey</a>
-    		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">Menu</i></a>
+    		<a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">Menu</i></a>
     		<ul class="right hide-on-med-and-down">
-        		<li><a href="about.html">About</a></li>
-        		<li><a href="folio.html">Portfolio</a></li>
-        		<li><a href="contact.html">Contact</a></li>
+        		<li><a href="#about">About</a></li>
+        		<li><a href="#portfolio">Portfolio</a></li>
+        		<li><a href="#contact">Contact</a></li>
       		</ul>
-      		<ul class="side-nav" id="mobile-demo">
-        		<li><a href="about.html">About</a></li>
-        		<li><a href="folio.html">Portfolio</a></li>
-        		<li><a href="collapsible.html">Contact</a></li>
+      		<ul class="side-nav" id="mobile-nav">
+        		<li><a href="#about">About</a></li>
+        		<li><a href="#portfolio">Portfolio</a></li>
+        		<li><a href="#contact">Contact</a></li>
       		</ul>
     	</div>
   	</nav>
 <!--End Navbar-->
 <!--Begin Main Content-->
-	<div class="container">
+	<div class="container" id="about">
 		<div class="row">
 			<div class="col s12 z-depth-3 chunk">
 				<h3>Who I Am</h3>
 				<hr>
 				<div class="row">
 					<div class="col s8">
-						<p>I am a brewer turned web developer who can not only tell you why your code isn’t working but can also tell you which malts are likely in that pint you’re drinking. Since 1998, I have been familiarizing myself with as many programming languages and technologies as I can find, including HTML, CSS, C++, Ruby, and most recently full-stack web development.  With a strong eye for detail and a “job’s not done until it’s done right” attitude, I now look forward to making the world a better place one program, and pint, at a time.</p>
+						<p>An avid outdoorsman, animal-lover, and beer connoisseur, I am a laid-back fullstack web developer who enjoys solving problems and helping others.</p> 
+						<p>I started with web design in 1998 as a result of a science project, and have enjoyed it as a hobby ever since. Over the years I added CSS and Javascript to made more visually engaging and interactive websites, but it still remained a hobby as I hopped from major to major in college trying to find "my passion." I guess I thought playing around with HTML, CSS, and Javascript was "too fun" to be considered a job, but, thankfully, after a friend opened my eyes to the world of web development, I knew I had found my calling. Having previously worked purely on front-end content, it was mindblowing to see what was achievable when paired with a custom back-end.</p>
+						<p>From this point onward, my goal is to use all that I've learned (and all I have yet to learn) to provide knowledge, entertainment, and solutions to people I may never meet in person, but whose lives will be improved nonetheless.</p>
 					</div>
 					<div class="col s4 center-align">
-						<!--Img Maybe-->
+						<img class="responsive-img" src="./images/anc.jpg" alt="Andrew and his wife, Corinne, at Stonetower Winery">
 					</div>
 				</div><!--End row-->
 			</div>
@@ -60,13 +62,14 @@
 		</div>
 	</div>
 <!--Main Content 2-->
-	<div class="container">	
+	<div class="container" id="portfolio">	
 		<div class="row">
 			<div class="col s12 z-depth-3 chunk">
 				<h3>Portfolio</h3>
 				<div class="divider"></div>
+				<h5>Group Projects</h5>
 				<div class="row">
-					<div class="col s6">
+					<div class="col s12 m12 l4">
 						<div class="card sticky-action">
 						    <div class="card-image waves-effect waves-block waves-light">
 						      	<img class="activator" src="./images/ftp.png">
@@ -93,50 +96,83 @@
 						    </div>
 						</div>
 					</div>
-					<div class="col s6">
-						<div class="card">
+					<div class="col s12 m12 l4">
+						<div class="card sticky-action">
 						    <div class="card-image waves-effect waves-block waves-light">
-						      	<img class="activator" src="https://thumb1.shutterstock.com/display_pic_with_logo/253597/527829019/stock-photo-website-programming-code-programming-of-internet-website-website-codes-on-computer-monitor-527829019.jpg">
+						      	<img class="activator" src="./images/cookery.png">
 						    </div>
 						    <div class="card-content">
-						      	<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-						      	<p><a href="#">This is a link</a></p>
+						      	<span class="card-title activator grey-text text-darken-4">Cookery<i class="material-icons right">more_vert</i></span>
+						      	Technologies Used:
+						      	<br>
+						      	<div class="chip">Firebase</div><div class="chip">React Native</div><div class="chip">Redux</div><div class="chip">Node.js</div><div class="chip">Expo.io</div>
+						    </div>
+						    <div class="card-action">
+						    	<a href="https://play.google.com/store/apps/details?id=com.cookery.cookery" target="_blank">Deployed App</a>
 						    </div>
 						    <div class="card-reveal">
-						      	<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-						      	<p>Here is some more information about this product that is only revealed once clicked on.</p>
+						      	<span class="card-title grey-text text-darken-4">Cookery<i class="material-icons right">close</i></span>
+						      	<p>Cookery is an app for accumulating all of your recipes into a single, searchable cookbook on your phone! No more flipping through book, binders, or notecards. Browse the whole list or search by ingredient, pull up the recipe, and have ingredients, instructions, notes, and nutritional information right there on one screen.</p><p>This app demonstrates my group's ability to learn, develop, and deploy a React Native minimum viable product in less than two weeks. Though not as flashy or fully-featured as we originally intended, I am proud of our ability to deploy a MVP on schedule.</p>
+						    </div>
+						</div>
+					</div>
+					<div class="col s12 m12 l4">
+						<div class="card sticky-action">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      	<img class="activator" src="./images/latchkeyper.png">
+						    </div>
+						    <div class="card-content">
+						      	<span class="card-title activator grey-text text-darken-4">Latchkeyper<i class="material-icons right">more_vert</i></span>
+						      	Technologies Used:
+						      	<br>
+						      	<div class="chip">Firebase</div><div class="chip">Javascript</div><div class="chip">jQuery</div><div class="chip">Ajax</div><div class="chip">Chart.js</div><div class="chip">Bootstrap</div>
+						    </div>
+						    <div class="card-action">
+						    	<a href="https://djjoyjr.github.io/latchkeyper/" target="_blank">Deployed App</a>
+						    	<a href="https://github.com/djjoyjr/latchkeyper" target="_blank">Github Repo</a>
+						    </div>
+						    <div class="card-reveal">
+						      	<span class="card-title grey-text text-darken-4">Latchkeyper<i class="material-icons right">close</i></span>
+						      	<p>An app designed to make the lives of working parents easier as well as make chores more fun for school-age "latchkey" kids. The intent is to have an easy way for parents to assign and check on chores without having to constantly nag, as well as incentivize kids to do chores by allowing children to suggest, and parents to approve, a reward system.</p><p>This app feature's an adult's page and a children's page. The parent's page features a "message from kids" area, an editable roster of children with their current standing "chore point" total, a table displaying chores already completed by their children, the suggested reward from each kid for parent approval and "point cost" assignment,  and a chart showing chore completion by day to see if trends in completion develop. The children's page features a message area from parents, the list of chores to complete, and an area to recommend rewards for which they can redeem their "chore points."</p>
 						    </div>
 						</div>
 					</div>
 				</div>
+				<h5>Solo Projects</h5>
 				<div class="row">
-					<div class="col s6">
-						<div class="card">
+					<div class="col s12 m6">
+						<div class="card sticky-action">
 						    <div class="card-image waves-effect waves-block waves-light">
-						      	<img class="activator" src="https://thumb1.shutterstock.com/display_pic_with_logo/253597/527829019/stock-photo-website-programming-code-programming-of-internet-website-website-codes-on-computer-monitor-527829019.jpg">
+						      	<img class="activator" src="./images/fail.png">
 						    </div>
 						    <div class="card-content">
-						      	<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-						      	<p><a href="#">This is a link</a></p>
+						      	<span class="card-title activator grey-text text-darken-4">Failure is Always an Option<i class="material-icons right">more_vert</i></span>
+						      	Technologies Used:
+						      	<br>
+						      	<div class="chip">Javascript</div><div class="chip">jQuery</div><div class="chip">Ajax</div><div class="chip">Giphy API</div>
+						    </div>
+						    <div class="card-action">
+						    	<a href="https://adlipsey.github.io/ajax-apis/" target="_blank">Deployed App</a>
+						    	<a href="https://github.com/adlipsey/ajax-apis" target="_blank">Github Repo</a>
 						    </div>
 						    <div class="card-reveal">
-						      	<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-						      	<p>Here is some more information about this product that is only revealed once clicked on.</p>
+						      	<span class="card-title grey-text text-darken-4">Failure is Always an Option<i class="material-icons right">close</i></span>
+						      	<p>A simple and silly project used to practice AJAX and API's, this app will append "fail" to anything typed in the search bar, add a button with the newly searched term to the menu on the left, and display the top 10 gif results (filtered for anything rated above PG-13). Clicking a gif display the animated version, clicking again will return it to the thumbnail image. I am proud of this one purely for the amount of fun I had with the CSS.</p>
 						    </div>
 						</div>
 					</div>
-					<div class="col s6">
-						<div class="card">
+					<div class="col s12 m6">
+						<div class="card sticky-action">
 						    <div class="card-image waves-effect waves-block waves-light">
-						      	<img class="activator" src="https://thumb1.shutterstock.com/display_pic_with_logo/253597/527829019/stock-photo-website-programming-code-programming-of-internet-website-website-codes-on-computer-monitor-527829019.jpg">
+						      	<img class="activator" src="./images/legacy.png">
 						    </div>
 						    <div class="card-content">
-						      	<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-						      	<p><a href="#">This is a link</a></p>
+						      	<span class="card-title activator grey-text text-darken-4">Legacy Management<i class="material-icons right">more_vert</i></span>
+						      	
 						    </div>
 						    <div class="card-reveal">
-						      	<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-						      	<p>Here is some more information about this product that is only revealed once clicked on.</p>
+						      	<span class="card-title grey-text text-darken-4">Legacy Management<i class="material-icons right">close</i></span>
+						      	<p>I am currently working on a website rework for Legacy Management Inc, a Daily Money Management company in McLean Virginia who act as an interface to help aging adults handle their finances and administrative tasks when they are no longer able to themselves. We are still in the process of accumulating content and pending approval from the managing partner, but it is already a large improvement in terms of navigation and client interactivity.</p>
 						    </div>
 						</div>
 					</div>
@@ -148,30 +184,45 @@
 	<div class="spacer">
 		<div class="parallax-container slant-right">
 			<div class="parallax inner-slant-right">
-				<img src="./images/kettlesSBC.jpg" class="para-code">
-			</div>
-		</div>
-	</div>
-	<!--Additional content-->
-	<div class="container">	
-		<div class="row">
-			<div class="col s12 z-depth-3 chunk">
-				<h3>Less important info</h3>
-				<div class="divider"></div>
-				<p>Blah blah blah</p>
-				<p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
-				<p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."</p>
-			</div>
-		</div>
-	</div><!--End container -->
-	<!--Parallax Image Divider-->
-	<div class="spacer">
-		<div class="parallax-container slant-left">
-			<div class="parallax inner-slant-left">
 				<img src="./images/sugarloaf.jpg" class="para-code">
 			</div>
 		</div>
 	</div>
+	<!--Additional content-->
+	<div class="container" id="contact">	
+		<div class="row">
+			<div class="col s12 z-depth-3 chunk">
+				<h3>Get In Touch</h3>
+				<div class="divider"></div>
+				<p>Now that you've learned a bit about me, I'd like to know a bit about you. Please use any of the methods below to get in touch with me:</p>
+				<div class="row">
+					<div class="col s6">
+						<div class="card">
+							<div class="card-content">
+								<h5>Via Email</h5>
+								<a class="waves-effect waves-light btn-large" href="mailto:adlipsey@gmail.com">adlipsey@gmail.com</a>
+							</div>
+						</div>
+					</div>
+					<div class="col s6">
+						<div class="card">
+							<div class="card-content">
+								<h5>Via Social Networks</h5>
+								<a class="waves-effect waves-light btn-large" href="https://www.linkedin.com/in/adlipsey/">LinkedIn</a>
+								<a class="waves-effect waves-light btn-large" href="https://github.com/adlipsey">Github</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="right-align closing">
+						<p>Thank you for stopping by! Can't wait to hear from you,</p>
+						<h3>Andrew Lipsey</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!--End container -->
 
 <!--jQuery CDN-->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -179,8 +230,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
+
+		//Initialize side-menu in mobile
 		$(".button-collapse").sideNav();
+
+		//Initialize parallax scrolling
     	$('.parallax').parallax();
+
     });
 </script>
 </body>
